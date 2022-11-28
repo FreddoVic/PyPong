@@ -26,7 +26,7 @@ class Paddle:
     def show(self):
         pygame.draw.rect(self.screen, self.color, (self.posX, self.posY , self.width, self.heigth))
 
-
+#heja
 pygame.init()
 
 WIDTH, HEIGHT = 900,500
