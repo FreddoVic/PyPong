@@ -1,5 +1,7 @@
 import pygame, sys
 
+#kommentarer är på svengelska
+
 class Ball:
     def __init__(self, screen, color, posX, posY, radius):
         self.screen = screen
@@ -9,8 +11,7 @@ class Ball:
         self.dx = 0
         self.dy = 0
         self.radius = radius
-        self.show()
-        
+        self.show()        
     
     def show(self):
         pygame.draw.circle(self.screen, self.color, (self.posX, self.posY), self.radius)
@@ -22,7 +23,6 @@ class Ball:
     def move(self):
         self.posX += self.dx
         self.posY += self.dy
-
 
 class Paddle:
     def __init__(self, screen, color, posX, posY, width, heigth):
@@ -38,14 +38,12 @@ class Paddle:
     def show(self):
         pygame.draw.rect(self.screen, self.color, (self.posX, self.posY , self.width, self.heigth))
 
-
     def move(self):
         if self.state == 'up':
             self.posY -= 0.3
         if self.state == 'down':
             self.posY += 0.3
         
-
 #heja
 pygame.init()
 
