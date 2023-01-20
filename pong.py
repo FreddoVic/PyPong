@@ -1,7 +1,7 @@
 import pygame, sys
 
 #kommentarer är på svengelska
-
+#herregud
 class Ball:
     def __init__(self, screen, color, posX, posY, radius):
         self.screen = screen
